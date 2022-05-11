@@ -8,7 +8,8 @@ require_once "config.php";
         <meta charset="UTF-8">
         <title>AISM</title>
         <link rel="Stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <script src="zegar.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
@@ -18,12 +19,12 @@ require_once "config.php";
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <a href="index.php">
+                    <a href="index.php" id="link">
                         <h1>EduPortal</h1> 
                     </a>
                 </div>
             </div>
-            <nav class="navbar navbar-light" style="background-color: #bbbbbb; margin-right: -15px; margin-left: -15px">
+            <nav class="navbar navbar-light" style="background-color: #44c99b; margin-right: -15px; margin-left: -15px">
                 <a class="nav-item nav-link active" href="index.php">Strona główna</a>
 				<?php
 					if((isset($_SESSION['user'])) && ($_SESSION['user']==true))
@@ -33,48 +34,46 @@ require_once "config.php";
 							header('Location: ankieta.php');
 						}
 						echo '
-						<a href="kursy.php">Lekcje</a>
-						<a href="ustawienia.php">Ustawienia</a>
-						<a href="wyloguj.php">Wyloguj</a>	
+						<a href="kursy.php" id="link" >Lekcje</a>
+						<a href="ustawienia.php" id="link">Ustawienia</a>
+						<a href="wyloguj.php" id="link">Wyloguj</a>	
 						';
 					}
 					else if((isset($_SESSION['admin'])) && ($_SESSION['admin']==true))
 					{
 						echo '
-						<a href="kursy.php">Lekcje</a>
-						<a href="dodaj_mod.php">Dodaj moderatora</a>
-						<a href="usun_moderatora.php">Moderatorzy</a>
-						<a href="usun_uzytkownika.php">Użytkownicy</a>
-						<a href="wyloguj.php">Wyloguj</a>
+						<a href="kursy.php" id="link">Lekcje</a>
+						<a href="dodaj_mod.php" id="link">Dodaj moderatora</a>
+						<a href="usun_moderatora.php" id="link">Moderatorzy</a>
+						<a href="usun_uzytkownika.php" id="link">Użytkownicy</a>
+						<a href="wyloguj.php" id="link">Wyloguj</a>
 						';
 					}
 					else if((isset($_SESSION['mod'])) && ($_SESSION['mod']==true))
 					{
 						echo '
-						<a href="dodaj_kurs.php">Dodaj lekcję</a>
-						<a href="kursy.php">Moje lekcje</a>
-						<a href="wyloguj.php">Wyloguj</a>
+						<a href="dodaj_kurs.php" id="link">Dodaj lekcję</a>
+						<a href="kursy.php" id="link">Moje lekcje</a>
+						<a href="wyloguj.php" id="link">Wyloguj</a>
 						';
 					}
 					else
 					{
 						echo '
-						<a href="rejestracja.php">Rejestracja</a>	
-						<a href="zaloguj.php">Zaloguj</a>
+						<a href="rejestracja.php" id="link">Rejestracja</a>	
+						<a href="zaloguj.php" id="link">Zaloguj</a>
 						';
 					}
 				?>
                 <div id="czas"></div>
             </nav>
-            <div class="row" style="background-color: #dddddd">
+            <div class="row" style="background-color: #a2f5d8" >
                 <div class="col">
-                    <h1>Witamy na stronie "ćwierćinteligentnego" systemu adaptacyjnego</h1>
+                    <h1>Witamy na stronie lepszego EduPortalu.</h1>
                     <p>
-                        Na naszej stronie możesz nauczyć się wielu niepotrzebnych rzeczy, które aktualizowane będą na bierząco.
+                        Na naszej stronie możesz nauczyć się wielu potrzebnych rzeczy, które aktualizowane będą na bieżąco.
                     </p>
-					<h2>Trzeba zrobić usówanie materiałów, edycję lekcji i jakieś testy do lekcji
-					a i poprawić usówanie lekcji, tak, żeby wyrzucało linki razem z lekcjami
-					</h2>
+
                     <p>Technologie użyte przy tworzeniu strony:</p>
                     <ol>
                         <p>HTML</p>
@@ -82,15 +81,7 @@ require_once "config.php";
                     </ol>
                 </div>
             </div>
-            <div class="row">
-                <div class="card-body" style="background-color: #bbbbbb">
-                    <blockquote class="blockquote mb-0">
-                        <footer class="blockquote-footer" style="background-color: #bbbbbb; color: black">
-                             Kulesza Dominik, Sawicki Damian & Zimnowodzki Igor Copyright &copy; 2019
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
+
         </div>
     </body>
 </html>

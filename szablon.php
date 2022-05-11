@@ -73,15 +73,7 @@ require_once "config.php";
 
                 </div>
             </div>
-            <div class="row">
-                <div class="card-body" style="background-color: #bbbbbb">
-                    <blockquote class="blockquote mb-0">
-                        <footer class="blockquote-footer" style="background-color: #bbbbbb; color: black">
-                             Kulesza Dominik, Sawicki Damian & Zimnowodzki Igor Copyright &copy; 2019
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
+
         </div>
     </body>
 </html>
