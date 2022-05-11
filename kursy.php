@@ -18,13 +18,13 @@ require_once "config.php";
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <a href="index.php">
+                    <a href="index.php" id="link">
                         <img src="img/logo.png" class="logo" alt="Responsive image"> 
                     </a>
                 </div>
             </div>
-            <nav class="navbar navbar-light" style="background-color: #bbbbbb; margin-right: -15px; margin-left: -15px">
-                <a class="nav-item nav-link active" href="index.php">Strona główna</a>
+            <nav class="navbar navbar-light" style="background-color: #44c99b; margin-right: -15px; margin-left: -15px">
+                <a class="nav-item nav-link active" href="index.php" id="link">Strona główna</a>
 				<?php
 					if((isset($_SESSION['user'])) && ($_SESSION['user']==true))
 					{
@@ -33,40 +33,40 @@ require_once "config.php";
 							header('Location: ankieta.php');
 						}
 						echo '
-						<a href="kursy.php">Lekcje</a>
-						<a href="ustawienia.php">Ustawienia</a>
-						<a href="wyloguj.php">Wyloguj</a>	
+						<a href="kursy.php" id="link">Lekcje</a>
+						<a href="ustawienia.php" id="link">Ustawienia</a>
+						<a href="wyloguj.php" id="link">Wyloguj</a>	
 						';
 					}
 					else if((isset($_SESSION['admin'])) && ($_SESSION['admin']==true))
 					{
 						echo '
-						<a href="kursy.php">Lekcje</a>
-						<a href="dodaj_mod.php">Dodaj moderatora</a>
-						<a href="usun_moderatora.php">Moderatorzy</a>
-						<a href="usun_uzytkownika.php">Użytkownicy</a>
-						<a href="wyloguj.php">Wyloguj</a>
+						<a href="kursy.php" id="link">Lekcje</a>
+						<a href="dodaj_mod.php" id="link">Dodaj moderatora</a>
+						<a href="usun_moderatora.php" id="link">Moderatorzy</a>
+						<a href="usun_uzytkownika.php" id="link">Użytkownicy</a>
+						<a href="wyloguj.php" id="link">Wyloguj</a>
 						';
 					}
 					else if((isset($_SESSION['mod'])) && ($_SESSION['mod']==true))
 					{
 						echo '
-						<a href="dodaj_kurs.php">Dodaj lekcję</a>
-						<a href="kursy.php">Moje lekcje</a>
-						<a href="wyloguj.php">Wyloguj</a>
+						<a href="dodaj_kurs.php" id="link">Dodaj lekcję</a>
+						<a href="kursy.php" id="link">Moje lekcje</a>
+						<a href="wyloguj.php" id="link">Wyloguj</a>
 						';
 					}
 					else
 					{
 						echo '
-						<a href="rejestracja.php">Rejestracja</a>	
-						<a href="zaloguj.php">Zaloguj</a>
+						<a href="rejestracja.php" id="link">Rejestracja</a>	
+						<a href="zaloguj.php id="link"Zaloguj</a>
 						';
 					}
 				?>
                 <div id="czas"></div>
             </nav>
-            <div class="row" style="background-color: #dddddd">
+            <div class="row" style="background-color: #a2f5d8">
                 <div id="col" style="margin-left:15%; text-align:left;">
 					<?php
 					if(isset($_SESSION["user"])) 
@@ -265,15 +265,7 @@ require_once "config.php";
 					?>
                 </div>
             </div>
-            <div class="row">
-                <div class="card-body" style="background-color: #bbbbbb">
-                    <blockquote class="blockquote mb-0">
-                        <footer class="blockquote-footer" style="background-color: #bbbbbb; color: black">
-                             Kulesza Dominik, Sawicki Damian & Zimnowodzki Igor Copyright &copy; 2019
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
+           
         </div>
     </body>
 </html>

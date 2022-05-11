@@ -19,13 +19,13 @@ require_once "config.php";
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <a href="index.php" id="link">
-                        <h1>EduPortal</h1> 
+					<a href="index.php">
+                        <img src="img/logo.png" class="logo" alt="Responsive image"> 
                     </a>
                 </div>
             </div>
-            <nav class="navbar navbar-light" style="background-color: #44c99b; margin-right: -15px; margin-left: -15px">
-                <a class="nav-item nav-link active" href="index.php">Strona główna</a>
+            <nav class="navbar navbar-light" style="background-color: #44c99b; margin-right: -13px; margin-left: -13px">
+                <a class="nav-item nav-link active" href="index.php" id="link">Strona główna</a>
 				<?php
 					if((isset($_SESSION['user'])) && ($_SESSION['user']==true))
 					{
