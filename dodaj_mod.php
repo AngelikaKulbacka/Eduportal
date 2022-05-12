@@ -81,7 +81,7 @@ require_once "config.php";
                             <input type="password" name="psw" required><br><br>
                             Potwierdź Hasło:<br>
                             <input type="password" name="psw1" required><br><br>
-                            <input type="submit" name="rejestruj"><br>
+                            <input type="submit" name="rejestruj" value="Dodaj" ><br>
                         </form>
                     <?php
 					}

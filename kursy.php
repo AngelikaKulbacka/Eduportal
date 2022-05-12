@@ -123,8 +123,8 @@ require_once "config.php";
 									</button>
 								</form>
 								<form method="POST">
-									<button type="submit" value="'.$row["id_lekcji"].'" name="usun" style="margin-top:5px; margin-bottom:10px;">
-									<strong>Usuń</strong>
+									<button type="submit" value="'.$row["id_lekcji"].'" name="usun" style="margin-top:5px; margin-bottom:10px; font-size:15px;">
+									Usuń
 									</button>
 								</form>
 								<div style="height:10px; size:1px; border-top: 1px solid #A9A9A9";></div>
