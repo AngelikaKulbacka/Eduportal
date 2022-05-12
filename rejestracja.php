@@ -82,7 +82,7 @@ require_once "config.php";
                             <input type="password" name="psw1" required><br><br>
                             Adres  email:<br>
                             <input type="email" name="mail" required><br><br>
-                            <input type="submit" name="rejestruj"><br>
+                            <input type="submit" name="rejestruj" value="Dodaj"><br>
                         </form>
                     <?php
 					}

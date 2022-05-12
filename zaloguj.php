@@ -85,7 +85,7 @@ require_once "config.php";
                             Hasło:
 							<br>
                             <input type="password" name="psw" required><br><br>
-                            <input type="submit" name="zaloguj">
+                            <input type="submit" name="zaloguj" value="Zaloguj">
 							<br><br>
 							<a href="pomoc.php" id="link">Zapomniałem hasła</a>
 

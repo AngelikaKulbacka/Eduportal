@@ -84,10 +84,10 @@ require_once "config.php";
 						<label for="tytul">Tytuł:</label>
 							<input type="text" id="tytul" name="tytul" style=" width:50%">
 						<br>
-						<label for="tresc">Tresć:</label>
+						<label for="tresc">Treść:</label>
 							<textarea id="tresc" rows="10" name="tresc" style=" width:50%"></textarea>
 						<br>
-						<input type="submit" name="dodaj_kurs" value="wyślij">
+						<input type="submit" name="dodaj_kurs" value="Dodaj">
 						<br>
 						<br>
 					</form>
