@@ -23,7 +23,7 @@ require_once "config.php";
                     </a>
                 </div>
             </div>
-            <nav class="navbar navbar-light" style="background-color: #44c99b; margin-right: -15px; margin-left: -15px">
+            <nav class="navbar navbar-light" style="background-color: #44c99b; margin-right: -15px; margin-left: -15px; height:100%;">
                 <a class="nav-item nav-link active" href="index.php" id="link">Strona główna</a>
 				<?php
 					if((isset($_SESSION['user'])) && ($_SESSION['user']==true))

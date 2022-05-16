@@ -14,11 +14,11 @@ require_once "config.php";
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="backimage">
-        <div class="container-fluid">
+    <body>
+    	<div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <a href="index.php" id="link">
+					<a href="index.php">
                         <img src="img/logo.png" class="logo" alt="Responsive image"> 
                     </a>
                 </div>
@@ -66,7 +66,7 @@ require_once "config.php";
 				?>
                 <div id="czas"></div>
             </nav>
-            <div class="row" style="background-color: #a2f5d8">
+            <div class="row" style="background-color: #a2f5d8; height:100%;">
                 <div class="col">
 				    <h2> Rejestracja</h2>
 					<br>

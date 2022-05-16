@@ -66,7 +66,7 @@ require_once "config.php";
 				?>
                 <div id="czas"></div>
             </nav>
-            <div class="row" style="background-color: #a2f5d8">
+            <div class="row" style="background-color: #a2f5d8; height:100%;">
                 <div class="col">
 					<?php
 					if (isset($_SESSION["user"])) 

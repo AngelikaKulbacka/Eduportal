@@ -66,7 +66,7 @@ require_once "config.php";
 				?>
                 <div id="czas"></div>
             </nav>
-            <div class="row" style="background-color: #a2f5d8">
+            <div class="row" style="background-color: #a2f5d8; height:100%;">
                 <div id="col" style="margin-left:15%; text-align:left;">
 					<?php
 					if(isset($_SESSION["user"])) 
@@ -123,8 +123,8 @@ require_once "config.php";
 									</button>
 								</form>
 								<form method="POST">
-									<button type="submit" value="'.$row["id_lekcji"].'" name="usun" style="margin-top:5px; margin-bottom:10px; font-size:15px;">
-									Usuń
+									<button type="submit" value="'.$row["id_lekcji"].'" name="usun" style="margin-top:5px; margin-bottom:10px;">
+									<strong>Usuń</strong>
 									</button>
 								</form>
 								<div style="height:10px; size:1px; border-top: 1px solid #A9A9A9";></div>

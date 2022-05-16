@@ -15,7 +15,7 @@ require_once "config.php";
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="backimage">
+    <body>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -67,7 +67,7 @@ require_once "config.php";
 				?>
                 <div id="czas"></div>
             </nav>
-            <div class="row" style="background-color: #a2f5d8" >
+            <div class="row" style="background-color: #a2f5d8; height:100%;" >
                 <div class="col">
                     <h1>Witamy na stronie lepszego EduPortalu.</h1>
                     <p>
