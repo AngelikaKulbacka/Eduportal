@@ -282,7 +282,7 @@ require_once "config.php";
 								if ($conn->query($sql) === TRUE) 
 								{
 									$_SESSION["styl_uczenia"]='2';
-									echo '<h2>Zostałeś zakwalifikowany jako "przyswajanie-wzrokowiec"<h2>';
+									echo '<h2>Zostałeś zakwalifikowany jako "wzrokowiec"<h2>';
 									echo '<div class="dottedline"></div>';
 								}
 								else 
@@ -301,7 +301,7 @@ require_once "config.php";
 								if ($conn->query($sql) === TRUE) 
 								{
 									$_SESSION["styl_uczenia"]='3';
-									echo '<h2>Zostałeś zakwalifikowany jako "przyswajanie-słuchowiec"<h2>';
+									echo '<h2>Zostałeś zakwalifikowany jako "słuchowiec"<h2>';
 									echo '<div class="dottedline"></div>';
 								}
 								else 
@@ -320,7 +320,7 @@ require_once "config.php";
 								if ($conn->query($sql) === TRUE) 
 								{
 									$_SESSION["styl_uczenia"]='4';
-									echo '<h2>Zostałeś zakwalifikowany jako "działanie-wzrokowiec"<h2>';
+									echo '<h2>Zostałeś zakwalifikowany jako "działaniowiec"<h2>';
 									echo '<div class="dottedline"></div>';
 								}
 								else 
@@ -339,7 +339,7 @@ require_once "config.php";
 								if ($conn->query($sql) === TRUE) 
 								{
 									$_SESSION["styl_uczenia"]='5';
-									echo '<h2>Zostałeś zakwalifikowany jako "działanie-słuchowiec"<h2>';
+									echo '<h2>Zostałeś zakwalifikowany jako "działaniowiec"<h2>';
 									echo '<div class="dottedline"></div>';
 								}
 								else 

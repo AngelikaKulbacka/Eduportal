@@ -76,10 +76,9 @@ require_once "config.php";
 						<form enctype="multipart/form-data" method="POST">
 						<label for="typy">Wybierz styl:</label>
 						<select name="wybrany_styl">
-							<option select value="2">przyswajanie-wzrokowiec</option>
-							<option value="3">przyswajanie-słuchowiec</option>
-							<option value="4">działanie-wzrokowiec</option>
-							<option value="5">działanie-słuchowiec</option>
+							<option select value="2">wzrokowiec</option>
+							<option value="3">słuchowiec</option>
+							<option value="4">działaniowiec</option>
 						</select>
 						<input type="submit" name="zmienstyl" value="wyślij">
 							<br>
